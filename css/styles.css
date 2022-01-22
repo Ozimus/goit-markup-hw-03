@@ -38,7 +38,7 @@ ul {
   padding-right: 15px;
   margin: 0 auto;
 
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 .heder {
   background: var(--main-color-white-);
