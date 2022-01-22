@@ -13,6 +13,9 @@ a {
   margin: 0;
   padding: 0;
 }
+button {
+  border: 0;
+}
 p,
 h1,
 h2,
@@ -28,6 +31,7 @@ ul {
 ul {
   list-style: none;
 }
+
 .container {
   width: 1600px;
   padding-left: 15px;
@@ -60,14 +64,22 @@ ul {
 
   color: black;
 }
-.logo-web-footer {
+.logo {
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
 
   letter-spacing: 0.03em;
   color: var(--main-color-blue-);
+  margin-bottom: 25px;
+  margin-top: 24px;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
   margin-left: 240px;
+}
+.wed-footer {
+  margin-top: 60px;
 }
 .logo-studio-footer {
   font-family: Raleway;
@@ -89,15 +101,14 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color-black-);
-  margin: 32px;
+  margin-top: 32px;
   margin-right: 0;
   display: flex;
 }
-.heder-item: not(: last-child) {
+.heder-item:not(:last-child) {
   margin-right: 50px;
 }
 .heder-item {
-  margin-left: 50px;
 }
 .heder-item:hover,
 .heder-item:focus {
@@ -112,7 +123,7 @@ ul {
   margin-left: 331px;
   display: flex;
 }
-.heder-link-item: {
+.heder-link-item {
   margin-right: 50px;
 }
 .heder-link-item:hover,
@@ -143,6 +154,8 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  weight: 200px;
+  height: 50px;
 
   color: var(--main-color-white-);
   background: var(--main-color-blue-);
@@ -248,7 +261,6 @@ ul {
 }
 .footer {
   background: #2f303a;
-  margin-top: 60px;
 }
 .footer-list {
   margin-left: 200px;
@@ -274,9 +286,13 @@ ul {
 .tel {
 }
 .section-option {
+  margin-bottom: 50px;
 }
 .option-list {
   display: flex;
+  margin-left: 495px;
+  margin-bottom: 50px;
+  margin-top: 94px;
 }
 .option-item {
   font-weight: 500;
@@ -298,6 +314,10 @@ ul {
   background: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 .option-btn:hover,
 .option-btn:focus {
@@ -309,11 +329,16 @@ ul {
   cursor: pointer;
 }
 .section-gallery {
+  /* display: none; */
+  margin-bottom: 64px;
 }
 .gallery-pre-title {
+  display: none;
 }
 .gallery-list {
   display: flex;
+  margin-left: 170px;
+  /* margin-bottom: 94px; */
 }
 .gallery-item {
   background: var(--main-color-white-);
@@ -323,12 +348,18 @@ ul {
   top: 262px;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  margin-right: 30px;
 }
+.gallery-item:nth-child(6n + 1) {
+  margin-bottom: 30px;
+}
+
 .gallery-title {
   font-size: 18px;
   line-height: 2;
 
   letter-spacing: 0.06em;
+  margin-top: 20px;
 
   color: var(--main-color-black-);
 }
@@ -337,4 +368,5 @@ ul {
   line-height: 1.87;
 
   letter-spacing: 0.03em;
+  margin-top: 4px;
 }
