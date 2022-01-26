@@ -25,23 +25,28 @@ h5,
 h6,
 ul {
   margin-top: 0;
-  /* padding: 0; */
+  padding: 0;
   margin-bottom: 0;
 }
 ul {
   list-style: none;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
-  width: 1600px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 .heder {
   background: var(--main-color-white-);
+  padding: 24px 0;
 }
 .logo-web {
   font-family: Raleway;
@@ -49,10 +54,7 @@ ul {
   line-height: 1.19;
 
   letter-spacing: 0.03em;
-  margin-top: 24px;
-  margin-bottom: 25px;
   margin-right: 93px;
-  margin-left: 200px;
   color: var(--main-color-blue-);
 }
 .logo-studio {
@@ -71,12 +73,10 @@ ul {
 
   letter-spacing: 0.03em;
   color: var(--main-color-blue-);
-  margin-bottom: 25px;
-  margin-top: 24px;
+  margin-bottom: 20px;
   justify-content: center;
   align-items: center;
   display: inline-block;
-  margin-left: 240px;
 }
 .wed-footer {
   margin-top: 60px;
@@ -91,6 +91,7 @@ ul {
   color: var(--main-color-white-);
 }
 .container-heder {
+  align-items: center;
   display: flex;
 }
 .heder-nav {
@@ -101,8 +102,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color-black-);
-  margin-top: 32px;
-  margin-right: 0;
   display: flex;
 }
 .heder-item:not(:last-child) {
@@ -119,8 +118,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-top: 32px;
-  margin-left: 331px;
+  margin-left: auto;
   display: flex;
 }
 .heder-link-item {
@@ -132,19 +130,20 @@ ul {
 }
 .section-hero {
   background-color: #2f303a;
-  height: 600px;
-  /* width: 1570px; */
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .title {
   font-weight: 900;
-  display: grid;
+
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-  padding-top: 200px;
+
   color: var(--main-color-white-);
 }
 .hero-btn {
@@ -156,26 +155,26 @@ ul {
   letter-spacing: 0.06em;
   weight: 200px;
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
 
   color: var(--main-color-white-);
   background: var(--main-color-blue-);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 700px;
-  margin-right: 700px;
-  margin-bottom: 200px;
 }
 .section-desc {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
-
+.section-title {
+  display: none;
+}
 .desc-list {
   display: flex;
-  margin-left: 200px;
-  margin-top: 94px;
-  margin-right: 200px;
 }
-.desc-item {
+.desc-item:not(:last-child) {
   margin-right: 30px;
 }
 .desc-title {
@@ -183,7 +182,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  margin-bottom: 10px;
   color: var(--main-color-black-);
 }
 .desc-text {
@@ -201,19 +200,19 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  margin-top: 94px;
 
   color: var(--main-color-black-);
 }
 .aside-list {
-  margin-left: 170px;
   display: flex;
 }
 .aside-item:not(:last-child) {
   margin-right: 30px;
 }
 .section-team {
-  margin-top: 188px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: #f5f4fa;
 }
 .team-title {
   font-size: 36px;
@@ -226,8 +225,6 @@ ul {
 }
 .team-list {
   display: flex;
-  margin-bottom: 94px;
-  margin-left: 170px;
 }
 .team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -235,10 +232,13 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 .team-img {
-  margin-bottom: 30px;
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
+}
+.name-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-member-title {
   font-weight: 500;
@@ -257,13 +257,16 @@ ul {
 
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
 }
 .footer {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-list {
-  margin-left: 200px;
+}
+.footer-item:not(:last-child) {
+  padding-bottom: 9px;
 }
 .footer-item {
   font-size: 14px;
@@ -273,7 +276,7 @@ ul {
 
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-item-maps {
+.maps {
   font-size: 14px;
   line-height: 1.71;
 
@@ -290,9 +293,6 @@ ul {
 }
 .option-list {
   display: flex;
-  margin-left: 495px;
-  margin-bottom: 50px;
-  margin-top: 94px;
 }
 .option-item {
   font-weight: 500;
@@ -336,9 +336,10 @@ ul {
   display: none;
 }
 .gallery-list {
+  /* display: flex; */
+}
+.gallery-box {
   display: flex;
-  margin-left: 170px;
-  /* margin-bottom: 94px; */
 }
 .gallery-item {
   background: var(--main-color-white-);
@@ -350,10 +351,12 @@ ul {
   box-sizing: border-box;
   margin-right: 30px;
 }
+.gallery-item:nth-child(3n + 3) {
+  margin-right: 0;
+}
 .gallery-item:nth-child(6n + 1) {
   margin-bottom: 30px;
 }
-
 .gallery-title {
   font-size: 18px;
   line-height: 2;
