@@ -47,6 +47,7 @@ img {
 .heder {
   background: var(--main-color-white-);
   padding: 24px 0;
+  border-bottom: 1px;
 }
 .logo-web {
   font-family: Raleway;
@@ -122,7 +123,6 @@ img {
   display: flex;
 }
 .heder-link-item {
-  margin-right: 50px;
 }
 .heder-link-item:hover,
 .heder-link-item:focus {
@@ -164,12 +164,21 @@ img {
   border-radius: 4px;
   cursor: pointer;
 }
-.section-desc {
+.section {
   padding-bottom: 94px;
   padding-top: 94px;
 }
 .section-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .desc-list {
   display: flex;
@@ -192,6 +201,7 @@ img {
   letter-spacing: 0.03em;
 }
 .section-aside {
+  padding-top: 0;
 }
 .aside-title {
   font-weight: 700;
@@ -210,8 +220,6 @@ img {
   margin-right: 30px;
 }
 .section-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background: #f5f4fa;
 }
 .team-title {
@@ -266,7 +274,7 @@ img {
 .footer-list {
 }
 .footer-item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .footer-item {
   font-size: 14px;
@@ -288,12 +296,11 @@ img {
 }
 .tel {
 }
-.section-option {
-  margin-bottom: 50px;
-}
+
 .option-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .option-item {
   font-weight: 500;
@@ -334,36 +341,42 @@ img {
   margin-bottom: 64px;
 }
 .gallery-pre-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .gallery-list {
-  /* display: flex; */
-}
-.gallery-box {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .gallery-item {
   background: var(--main-color-white-);
-  width: 370px;
-  height: 404px;
-  left: 615px;
-  top: 262px;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
   margin-right: 30px;
-}
-.gallery-item:nth-child(3n + 3) {
-  margin-right: 0;
-}
-.gallery-item:nth-child(6n + 1) {
   margin-bottom: 30px;
+}
+.gallery-box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .gallery-title {
   font-size: 18px;
   line-height: 2;
 
   letter-spacing: 0.06em;
-  margin-top: 20px;
 
   color: var(--main-color-black-);
 }
